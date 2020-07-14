@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Detail extends Model
@@ -19,4 +20,11 @@ class Detail extends Model
     {
         return $this->hasMany(Order::class);
     }
+
+    // protected static function booted()
+    // {
+    //     static::addGlobalScope('order', function (Builder $builder) {
+    //         $builder->orderByRaw('length(dim1), dim1');
+    //     });
+    // }
 }
