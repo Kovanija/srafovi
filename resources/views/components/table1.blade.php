@@ -60,7 +60,7 @@
         <tr>
             <th scope="row">{{$dim1}}</th>
             @foreach($cells as $cell)
-        <td data-id="{{ $cell->id }}"></td>
+        <td data-id="{{ $cell->id }}" style="background-color: {{ $cell->ordered ? 'black' : 'white'}}"></td>
             @endforeach
         </tr>
         @endforeach

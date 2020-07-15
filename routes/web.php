@@ -19,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'TablesController@index');
 
+Route::post('/login', 'AuthController@authenticate');
+Route::post('/register', 'AuthController@register');
+Route::get('/logout', 'AuthController@logout');
+
+Route::post('/customer', 'CustomerController@store');
+
 
 Route::post('/insert', function () {
     $pro = new Product();

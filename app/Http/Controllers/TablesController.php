@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Customer;
 use App\Detail;
 use App\Order;
 use App\Product;
@@ -9,10 +10,20 @@ use Illuminate\Http\Request;
 
 class TablesController extends MasterController
 {
-    public function index()
+    public function index(Request $request)
     {
         $tables = [];
-        $customer_id = 1;
+        $customer_pib = ($request->has('pib')) ? $request->pib : null;
+        if ($customer_pib) {
+            $customer_id = Customer::where('pib', $customer_pib)->first()->id;
+        } else {
+            $customer_id = null;
+        }
+        if ($customer_id) {
+            $order_details = Order::where('customer_id', $customer_id)->pluck('detail_id')->toArray();
+        } else {
+            $order_details = null;
+        }
         for ($i = 1; $i <= 10; $i++) {
             $table = array();
             $products = Product::with('details')->where('table_id', $i)->get();
@@ -27,8 +38,7 @@ class TablesController extends MasterController
                                 $data[$detail->dim1] = array();
                             }
                             array_push($data[$detail->dim1], $detail);
-                            $ordered = Order::where('customer_id', $customer_id)->where('detail_id', $detail->id)->first();
-                            if ($ordered) {
+                            if ($order_details && in_array($detail->id, $order_details)) {
                                 $detail->ordered = true;
                             } else {
                                 $detail->ordered = false;
@@ -44,8 +54,7 @@ class TablesController extends MasterController
                                 $data[$detail->dim2] = array();
                             }
                             array_push($data[$detail->dim2], $detail);
-                            $ordered = Order::where('customer_id', $customer_id)->where('detail_id', $detail->id)->first();
-                            if ($ordered) {
+                            if ($order_details && in_array($detail->id, $order_details)) {
                                 $detail->ordered = true;
                             } else {
                                 $detail->ordered = false;
