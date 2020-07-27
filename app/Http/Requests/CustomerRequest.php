@@ -27,7 +27,7 @@ class CustomerRequest extends FormRequest
     {
         return [
             'name' => 'required|max:100',
-            'pib' => 'unique:customers',
+            'pib' => 'required|unique:customers',
             'location' => 'required',
             'customer_type' => 'required',
         ];
@@ -38,14 +38,10 @@ class CustomerRequest extends FormRequest
         return [
             'name.required'    => 'Morate uneti naziv.',
             'name.max'    => 'Naziv je predug.',
+            'pib.required'    => 'Morate uneti PIB.',
             'pib.unique'    => 'PIB već postoji.',
             'location.required'    => 'Morate uneti mesto.',
             'customer_type.required'    => 'Morate uneti tip korisnika.',
         ];
-    }
-
-    protected function failedValidation(Validator $validator)
-    {
-        throw new HttpResponseException(response()->json($validator->errors(), 422));
     }
 }

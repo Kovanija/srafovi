@@ -14,12 +14,19 @@ class AuthController extends Controller
         return 'username';
     }
 
+    public function loginView()
+    {
+        return view('pages.login');
+    }
+
     public function authenticate(Request $request)
     {
         $credentials = $request->only('username', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/');
+            return redirect('/');
+        } else {
+            return redirect()->back()->withErrors(['Pogrešno korisničko ime ili lozinka!']);
         }
     }
 

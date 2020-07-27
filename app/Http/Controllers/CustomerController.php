@@ -9,15 +9,19 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+    public function index()
+    {
+        return view('pages.customer');
+    }
+
     public function store(CustomerRequest $request)
     {
-        $newCustomer = $request->all();
-
+        $newCustomer = $request->except('_token');
         try {
             $customer = Customer::create($newCustomer);
-            return response(['customer' => $customer], 201);
+            return redirect('/')->with(['customerSuccess' => 'Uspešno ste uneli kupca!']);
         } catch (Exception $e) {
-            return response(['error' => 'Došlo je do greške na serveru.'], 500);
+            return redirect('/')->with(['customerError' => 'Došlo je do greške!']);
         }
     }
 }
