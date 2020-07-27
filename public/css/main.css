@@ -281,3 +281,14 @@ input:focus {
 #successBox {
     padding-top: 50px;
 }
+
+.tabela1 img {
+    width: 40px;
+    height: 40px;
+    align-items: flex-end;
+}
+.tabela2 img {
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
