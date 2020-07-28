@@ -36,7 +36,7 @@
   
 <div>
     <div class="flex-container tabela2">
-        <p style="width:40px;">cena za 100 kom</p>
+        <p style="width:40px;height:10px;">cena za 100 kom</p>
         <img src="/img/image031.png" alt="">
         <img src="/img/image033.png" alt="">
         <img src="/img/image035.png" alt="">
