@@ -8,8 +8,8 @@
 {{-- @include('pages.tablepages.tablepage4') --}}
 {{-- @include('pages.tablepages.tablepage5') --}}
 {{-- @include('pages.tablepages.tablepage6') --}}
-{{-- @include('pages.tablepages.tablepage7')  --}}
-{{-- @include('pages.tablepages.tablepage8')  --}}
+{{-- @include('pages.tablepages.tablepage7') --}}
+{{-- @include('pages.tablepages.tablepage8') --}}
 {{-- @include('pages.tablepages.tablepage9') --}}
 {{-- @include('pages.tablepages.tablepage10') --}}
 {{-- @include('pages.tablepages.tablepage11') --}}
@@ -17,7 +17,7 @@
 {{-- @include('pages.tablepages.tablepage13') --}}
 {{-- @include('pages.tablepages.tablepage14') --}}
 {{-- @include('pages.tablepages.tablepage15') --}}
-
+{{-- @include('pages.tablepages.tablepage16') --}}
 
 
 @endsection
