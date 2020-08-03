@@ -10,7 +10,7 @@
                     MAŠINSKI VIJCI JUS 051 kv 5.6 *CINKOVANI*
                 </div>
             </div>
-            <div style="width:800px;">
+            <div style="width:800px;margin-left:-150px">
                 @include('components/table2', ["table" => $tables[9],
                 "tableWidth" => 800, "col1" => "Dim.", "col1Width" => 50])
             </div>
