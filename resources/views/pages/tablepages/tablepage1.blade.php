@@ -4,7 +4,7 @@
     <div style="width: 900px">
     <div class="tabela1">
         <div class="flex-container">
-            <p style="margin-left:-100px">cena za 100 kom</p>
+            <b style="margin-left:-100px">cena za 100 kom</b>
             <img src="/img/image021.png" alt="">
             <img src="/img/image023.png" alt="">
             <img src="/img/image025.png" alt="">
@@ -24,7 +24,7 @@
 
 <div style="overflow-x:auto;" class="flex-container">
    <div>
-   <p>NAVOJNE ŠIPKE - 1kom</p>
+   <b>NAVOJNE ŠIPKE - 1kom</b>
    <div style="width: 600px" class="flex-container">
   
         @include('components/table3', ["table" => $tables[2], "tableWidth" => 500, "col1" => "Dim.", "col1Width" => 50]) 
@@ -36,7 +36,7 @@
   
 <div>
     <div class="flex-container tabela2">
-        <p style="width:40px;height:10px;">cena za 100 kom</p>
+        <b style="width:40px;height:10px;">cena za 100 kom</b>
         <img src="/img/image031.png" alt="">
         <img src="/img/image033.png" alt="">
         <img src="/img/image035.png" alt="">
@@ -55,8 +55,8 @@
     <div class="flex-container flex-column">
    
     <div>
-    NASTAVAK NAVOJ ZA
-    DRVO-MAŠINSKI NAVOJ (VD-SMK)
+    <b>NASTAVAK NAVOJ ZA
+    DRVO-MAŠINSKI NAVOJ (VD-SMK)</b>
     <div class="flex-container">
     <div style="width: 200px">
             @include('components/table1', ["table" => $tables[4], "tableWidth" => 200, "col1" => "Dim.", "col2" => "Kol.", "col1Width" => 50])
