@@ -35,7 +35,7 @@ class TablesController extends MasterController
             $order_details = null;
             return redirect('/')->with(['pibError' => 'Ne postoji kupac sa unetim PIB-om!']);
         }
-        for ($i = 1; $i <= 156; $i++) {
+        for ($i = 1; $i <= 300; $i++) {
             $table = array();
             $products = Product::with('details')->where('table_id', $i)->get();
             if (count($products) == 0) {
@@ -177,6 +177,32 @@ class TablesController extends MasterController
                                 $data[$detail->id] = array();
                             }
                             array_push($data[$detail->id], $detail);
+                            if ($order_details && in_array($detail->id, $order_details)) {
+                                $detail->ordered = true;
+                            } else {
+                                $detail->ordered = false;
+                            }
+                        }
+                    }
+                    array_push($table, $products, $data);
+                    break;
+                case 8:
+                    foreach ($products as $product) {
+                        foreach ($product->details as $detail) {
+                            array_push($data, $detail);
+                            if ($order_details && in_array($detail->id, $order_details)) {
+                                $detail->ordered = true;
+                            } else {
+                                $detail->ordered = false;
+                            }
+                        }
+                    }
+                    array_push($table, $products, $data);
+                    break;
+                case 9:
+                    foreach ($products as $product) {
+                        foreach ($product->details as $detail) {
+                            array_push($data, $detail);
                             if ($order_details && in_array($detail->id, $order_details)) {
                                 $detail->ordered = true;
                             } else {

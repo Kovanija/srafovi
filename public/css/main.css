@@ -109,6 +109,14 @@ img {
     color: #fff;
 }
 
+.customTable td > ul > li {
+    display: block;
+    padding: 5px;
+    background-color: #ff6600;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
 #tableColorSm table thead tr th:nth-child(2) {
     background-color: red !important;
 }
@@ -228,7 +236,7 @@ img {
     /* margin-bottom: 170px; */
 }
 
-.flex-container div {
+.flex-container > div {
     margin-bottom: 30px;
 }
 .cetiritabele {
