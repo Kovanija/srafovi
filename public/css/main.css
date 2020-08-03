@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Numans", sans-serif;
+    width: 1800px;
 }
 
 img {
@@ -106,6 +107,14 @@ img {
 
 .customTable .ordered input {
     color: #fff;
+}
+
+.customTable td > ul > li {
+    display: block;
+    padding: 5px;
+    background-color: #ff6600;
+    cursor: pointer;
+    border: 1px solid white;
 }
 
 #tableColorSm table thead tr th:nth-child(2) {
@@ -227,7 +236,7 @@ img {
     /* margin-bottom: 170px; */
 }
 
-.flex-container div {
+.flex-container > div {
     margin-bottom: 30px;
 }
 .cetiritabele {

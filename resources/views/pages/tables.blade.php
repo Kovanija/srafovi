@@ -18,6 +18,8 @@
 {{-- @include('pages.tablepages.tablepage14') --}}
 {{-- @include('pages.tablepages.tablepage15') --}}
 {{-- @include('pages.tablepages.tablepage16') --}}
+{{-- @include('pages.tablepages.tablepage17') --}}
+@include('pages.tablepages.tablepage18')
 
 
 @endsection

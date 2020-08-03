@@ -37,3 +37,35 @@ for (let input of inputs) {
         }
     });
 }
+
+// for (let input of inputs) {
+//     input.addEventListener("focus", function() {
+//         let parent = document.createElement("ul");
+//         let li1 = document.createElement("li");
+//         li1.textContent = "50";
+//         li1.onclick = function() {
+//             this.parentElement.parentElement.firstElementChild.value = 50;
+//             this.parentElement.parentElement.removeChild(
+//                 this.parentElement.parentElement.lastElementChild
+//             );
+//         };
+//         let li2 = document.createElement("li");
+//         li2.textContent = "100";
+//         li2.onclick = function() {
+//             this.parentElement.parentElement.firstElementChild.value = 100;
+//             this.parentElement.parentElement.removeChild(
+//                 this.parentElement.parentElement.lastElementChild
+//             );
+//         };
+//         let li3 = document.createElement("li");
+//         li3.textContent = "150";
+//         li3.onclick = function() {
+//             this.parentElement.parentElement.firstElementChild.value = 150;
+//             this.parentElement.parentElement.removeChild(
+//                 this.parentElement.parentElement.lastElementChild
+//             );
+//         };
+//         parent.append(li1, li2, li3);
+//         this.parentElement.append(parent);
+//     });
+// }

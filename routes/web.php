@@ -44,10 +44,10 @@ Route::get('/cart/pdf', 'OrderController@generatePDF');
 Route::post('/insert', function () {
     $pro = new Product();
 
-    $pro->name = "VIJCI ZA KROVOVE ZA DRVENU KONSTRUKCIJU \"DIN7504-K\" SAMOUREZIVI SA VULKANIZIRANOM PODLOŠKOM U BOJI";
+    $pro->name = "END BRUSHES HIGH QUALITY (GERMANY)";
 
-    $pro->table_id = 53;
-    $pro->table_type = 2;
+    $pro->table_id = 295;
+    $pro->table_type = 1;
 
     $pro->save();
 
@@ -55,59 +55,40 @@ Route::post('/insert', function () {
 
     $arr1 = [3009, 8017, 9006];
     $arr2 = ["4.8x25", "4.8x35", "4.8x70", "5.5x80"];
-    // $arr3 = [
-    //     [
-    //         "dim1" => "flat chisel",
-    //         "dim2" => "250 x 24"
-    //     ],
-    //     [
-    //         "dim1" => "pointed chisel",
-    //         "dim2" => "250"
-    //     ],
-    //     [
-    //         "dim1" => "hollow gouge",
-    //         "dim2" => "250 x 26"
-    //     ],
-    //     [
-    //         "dim1" => "wide scaling chisel",
-    //         "dim2" => "200 x 40"
-    //     ],
-    //     [
-    //         "dim1" => "variable channel chisel",
-    //         "dim2" => "250 x 225"
-    //     ],
-    //     [
-    //         "dim1" => "slotting tool",
-    //         "dim2" => "200 x 32"
-    //     ]
-    // ];
+    $arr3 = [
+        [
+            "dim1" => "RECORD end brush P22 D 24, d 6, 0.30 STD",
+            "dim2" => "75/2.5",
+            "dim3" => "drvo, plastika"
+        ],
+    ];
 
-    // foreach ($arr3 as $obj) {
+    foreach ($arr3 as $obj) {
 
-    //     $det = new Detail();
+        $det = new Detail();
 
-    //     $det->dim1 = $obj["dim1"];
-    //     $det->dim2 = $obj["dim2"];
-    //     //$det->pack = $obj["pack"];
+        $det->dim1 = $obj["dim1"];
+        //$det->dim2 = $obj["dim2"];
+        //$det->dim3 = $obj["dim3"];
 
-    //     $det->product_id = $product_id;
+        $det->product_id = $product_id;
 
-    //     $det->save();
-    // }
-
-    foreach ($arr1 as $dim1) {
-        foreach ($arr2 as $dim2) {
-            $det = new Detail();
-
-            $det->dim1 = $dim1;
-            $det->dim2 = $dim2;
-            //$det->dim3 = null;
-
-            $det->product_id = $product_id;
-
-            $det->save();
-        }
+        $det->save();
     }
+
+    // foreach ($arr1 as $dim1) {
+    //     foreach ($arr2 as $dim2) {
+    //         $det = new Detail();
+
+    //         $det->dim1 = $dim1;
+    //         $det->dim2 = $dim2;
+    //         //$det->dim3 = null;
+
+    //         $det->product_id = $product_id;
+
+    //         $det->save();
+    //     }
+    // }
 
     return response(null, 201);
 });
