@@ -1,12 +1,12 @@
-<div style="overflow-x:auto;" class="flex-container">
+<div style="overflow-x:auto;width:1850px;" class="flex-container">
 
-    <div class="flex-container flex-column">
+    <div class="flex-container flex-column" style="justify-content:flex-start;">
 
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>CUP BRUSHES HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content:flex-start;">
                 <div style="width: 350px">
                     @include('components/table1', ["table" => $tables[159], "tableWidth" => 350, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 250])
                 </div>
@@ -31,33 +31,33 @@
             </div>
         </div>
 
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>CIRKULAR BRUSHES HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 450px">
                     @include('components/table1', ["table" => $tables[161], "tableWidth" => 450, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 350])
                 </div>
                 <div>
                     <div>
-                        <img src="/img/image576.png" alt="">
+                        <img src="/img/image576.png" alt="" style="height: 130px;">
                     </div>
                     <div>
-                        <img src="/img/image577.png" alt="">
+                        <img src="/img/image577.png" alt="" style="height: 130px;">
                     </div>
                     <div>
-                        <img src="/img/image578.png" alt="">
+                        <img src="/img/image578.png" alt="" style="height: 130px;">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>END BRUSHES HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 450px">
                     @include('components/table1', ["table" => $tables[295], "tableWidth" => 450, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 350])
                 </div>
@@ -69,12 +69,12 @@
             </div>
         </div>
 
-        <div class="flex-container">
-            <div>
-                <div class="black-box">
+        <div class="flex-container" style="border:2px solid black;">
+        <div style="border: 2px solid black;">
+        <div class="black-box">
                     <p>Bits profi HIGH QUALITY (GERMANY)</p>
                 </div>
-                <div class="flex-container">
+                <div class="flex-container" style="justify-content: inherit;">
                     <div style="width: 400px">
                         @include('components/table5', ["table" => $tables[163], "tableWidth" => 400, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 100, "tableNo" => 2])
                     </div>
@@ -90,7 +90,7 @@
                     <div class="black-box">
                         <p>Bits profi (TITANIJUM) HIGH QUALITY (GERMANY)</p>
                     </div>
-                    <div style="width: 400px">
+                    <div style="width: 400px" style="justify-content: inherit;">
                         @include('components/table5', ["table" => $tables[164], "tableWidth" => 400, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 100, "tableNo" => 2])
                     </div>
                     <div>
@@ -100,11 +100,11 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="black-box">
                         <p>TORX profi HIGH QUALITY (GERMANY)</p>
                     </div>
-                    <div class="flex-container">
+                    <div class="flex-container" style="justify-content: inherit;">
                         <div style="width: 200px">
                             @include('components/table1', ["table" => $tables[165], "tableWidth" => 200, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 100])
                         </div>
@@ -118,11 +118,11 @@
             </div>
         </div>
 
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>NASADNI KLJUC SA MAGNETOM(profi) HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 200px">
                     @include('components/table1', ["table" => $tables[166], "tableWidth" => 200, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 100])
                 </div>
@@ -134,11 +134,11 @@
             </div>
         </div>
 
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>UBODNE TESTERICE (Bosh, AEG, Atlas Copco, ELU, Holz-Herr, Metabo, FLEX, Makita, Festo, itd.) HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 400px">
                     @include('components/table9', ["table" => $tables[293], "tableWidth" => 400, "colDim1" => "naziv", "colDim2" => "Dimenzija", "colDim3" => "Opis", "col2" => "cena"])
                 </div>
@@ -150,11 +150,11 @@
             </div>
         </div>
         
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>UBODNE TESTERICE (Black & Decker, Kress, itd.) HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 400px">
                     @include('components/table9', ["table" => $tables[294], "tableWidth" => 400, "colDim1" => "naziv", "colDim2" => "Dimenzija", "colDim3" => "Opis", "col2" => "cena"])
                 </div>
@@ -170,13 +170,13 @@
 
     <div class="flex-container flex-column">
 
-        <div>
+    <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>SHAFT-MOUNTED BRUSHES HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
-                <div style="width: 500px">
-                    @include('components/table1', ["table" => $tables[160], "tableWidth" => 500, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 250])
+            <div class="flex-container" style="justify-content: inherit;">
+                <div style="width: 600px">
+                    @include('components/table1', ["table" => $tables[160], "tableWidth" => 600, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 500])
                 </div>
                 <div>
                     <div class="flex-container">
@@ -196,11 +196,11 @@
             </div>
         </div>
 
-        <div>
+        <div style="border: 2px solid black;">
             <div class="black-box">
                 <p>HIGH QUALITY (GERMANY)</p>
             </div>
-            <div class="flex-container">
+            <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 450px">
                     @include('components/table1', ["table" => $tables[162], "tableWidth" => 450, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 350])
                 </div>
@@ -228,7 +228,7 @@
 
             <div class="flex-container flex-column">
 
-                <div>
+            <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>KAMEN PERFECT</p>
                     </div>
@@ -244,7 +244,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>METAL PERFECT</p>
                     </div>
@@ -271,7 +271,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>DIJAMANTSKA PLOCA GRF-E</p>
                     </div>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>DIJAMANTSKA PLOCA GR-UNI</p>
                     </div>
@@ -307,7 +307,7 @@
 
             <div class="flex-container flex-column">
 
-                <div>
+            <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>METAL SPECIAL</p>
                     </div>
@@ -334,7 +334,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>INOX SPECIAL</p>
                     </div>
@@ -350,7 +350,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>DIJAMANTSKA PLOCA BASIC ST-5</p>
                     </div>
@@ -366,7 +366,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>DIJAMANTSKA PLOCA ST-7</p>
                     </div>
@@ -382,7 +382,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div style="border: 2px solid black;">
                     <div class="orange-box">
                         <p>METAL INOX SPECIAL</p>
                     </div>

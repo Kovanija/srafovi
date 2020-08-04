@@ -40,27 +40,32 @@ Route::get('/cart/flush', 'OrderController@flush')->middleware('auth');
 Route::post('/cart/order', 'OrderController@order')->middleware('auth');
 Route::get('/cart/pdf', 'OrderController@generatePDF');
 
-
 Route::post('/insert', function () {
     $pro = new Product();
 
-    $pro->name = "END BRUSHES HIGH QUALITY (GERMANY)";
+    $pro->name = "Cerada 4x6m 60g";
 
-    $pro->table_id = 295;
-    $pro->table_type = 1;
+    $pro->table_id = 291;
+    $pro->table_type = 11;
 
     $pro->save();
 
     $product_id = $pro->id;
 
-    $arr1 = [3009, 8017, 9006];
-    $arr2 = ["4.8x25", "4.8x35", "4.8x70", "5.5x80"];
+    // $arr1 = [3009, 8017, 9006];
+    // $arr2 = ["4.8x25", "4.8x35", "4.8x70", "5.5x80"];
     $arr3 = [
         [
-            "dim1" => "RECORD end brush P22 D 24, d 6, 0.30 STD",
-            "dim2" => "75/2.5",
-            "dim3" => "drvo, plastika"
+            "dim1" => "4430",
+            // "dim2" => "50mm",
+            "pack" => "6"
         ],
+  
+    
+       
+    
+       
+
     ];
 
     foreach ($arr3 as $obj) {
@@ -68,8 +73,8 @@ Route::post('/insert', function () {
         $det = new Detail();
 
         $det->dim1 = $obj["dim1"];
-        //$det->dim2 = $obj["dim2"];
-        //$det->dim3 = $obj["dim3"];
+        // $det->dim2 = $obj["dim2"];
+        $det->pack = $obj["pack"];
 
         $det->product_id = $product_id;
 
