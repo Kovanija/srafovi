@@ -19,8 +19,9 @@
  @include('pages.tablepages.tablepage15') 
  @include('pages.tablepages.tablepage16')  
  @include('pages.tablepages.tablepage17') 
- @include('pages.tablepages.tablepage18')  --}}
- @include('pages.tablepages.tablepage19') 
+ @include('pages.tablepages.tablepage18')  
+ @include('pages.tablepages.tablepage19') --}}
+ @include('pages.tablepages.tablepage20')
 
 @endsection
 

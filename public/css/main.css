@@ -29,6 +29,13 @@ img {
     font-weight: bold;
 }
 
+.border-text {
+    border: 2px solid gray;
+    color: grey;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+
 .orange-box {
     background-color: #ff6600;
     border: 2px solid black;
@@ -84,15 +91,27 @@ img {
     font-size: 15px;
 }
 
-.customTable.gray th {
+.customTable.gray1 th {
     background: #ccc !important;
 }
 
-.customTable.gray th:nth-child(2) {
+.customTable.gray1 th:nth-child(2) {
     width: 120px;
 }
 
-.customTable.gray th:nth-child(3) {
+.customTable.gray1 th:nth-child(3) {
+    width: 50px;
+}
+
+.customTable.gray2 th {
+    background: #ccc !important;
+}
+
+.customTable.gray2 th:nth-child(1) {
+    width: 120px;
+}
+
+.customTable.gray2 th:nth-child(2) {
     width: 50px;
 }
 
