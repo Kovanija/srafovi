@@ -38,6 +38,15 @@ for (let input of inputs) {
     });
 }
 
+window.addEventListener("hashchange", function() {
+    window.scrollTo(window.scrollX, window.scrollY - 150);
+});
+
+document.getElementById("pageSelector").addEventListener("change", function() {
+    document.getElementById(this.value).scrollIntoView();
+    window.scrollBy(0, -150);
+});
+
 // for (let input of inputs) {
 //     input.addEventListener("focus", function() {
 //         let parent = document.createElement("ul");

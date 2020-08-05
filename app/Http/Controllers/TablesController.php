@@ -250,6 +250,7 @@ class TablesController extends MasterController
             //array_push($tables, $table);
             $tables[$table[0]] = $table;
         }
-        return view('pages/tables', ["tables" => $tables]);
+        $allPages = range(1, 20);
+        return view('pages/tables', ["tables" => $tables, "allPages" => $allPages]);
     }
 }

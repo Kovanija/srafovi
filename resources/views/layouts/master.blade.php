@@ -9,7 +9,30 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
   </head>
   <body>
-    @yield('content')
+    
+    @if(Auth::check())
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed" style="z-index: 10">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/"><i class="fas fa-user"></i> Kupac</a>
+          <a class="nav-item nav-link" href="/tables"><i class="fas fa-screwdriver"></i> Proizvodi</a>
+          <a class="nav-item nav-link" href="/cart"><i class="fas fa-shopping-cart"></i> Korpa</a>
+          @if(Auth::user()->id == 1)
+          <a class="nav-item nav-link" href="/user"><i class="fas fa-users-cog"></i> Korisnik</a>
+          @endif
+          <a class="nav-item nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i> Odjava</a>
+        </div>
+      </div>
+    </nav>
+    @endif
+    
+    <div style="margin-top:100px;">
+      @yield('content')
+    </div>
+    
     @yield('javascript')
   </body>
 </html>
