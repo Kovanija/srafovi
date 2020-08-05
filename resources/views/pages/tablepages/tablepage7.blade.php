@@ -1,6 +1,11 @@
+<div class="center">
+<img src="/img/image007.png" alt="">
+</div>
+
 <div class="flex-container" style="overflow-x:auto;">
     <div>
-        <p>METALNI PRIČVRŠĆIVAČ ZA VRATA I PROZORE din / 1 kom</p>
+        <b>METALNI PRIČVRŠĆIVAČ<br>
+           ZA VRATA I PROZORE din / 1 kom</b>
         <div class="flex-container">
             <div style="width: 150px">
                 @include('components/table1', ["table" => $tables[40], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -11,7 +16,8 @@
         </div>
     </div>
     <div style="margin-top:50px;">
-        <p>KAPICA (KAP-O)</p>
+        <b>KAPICA<br>
+           (KAP-O)</b>
         <div class="flex-container">
             <div style="width: 150px;">
                 @include('components/table1', ["table" => $tables[41], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -22,7 +28,8 @@
         </div>
     </div>
     <div>
-        <p>TURBO VIJCI din/ 1 kom</p>
+        <b>TURBO VIJCI<br>
+           din/ 1 kom</b>
         <div class="flex-container">
             <div style="width: 150px">
                 @include('components/table1', ["table" => $tables[42], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -33,7 +40,8 @@
         </div>
     </div>
     <div style="margin-top:50px;">
-        <p>KAPICA (KAP-WHO)</p>
+        <b>KAPICA<br>
+           (KAP-WHO)</b>
         <div class="flex-container">
             <div style="width: 150px;">
                 @include('components/table1', ["table" => $tables[43], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -47,7 +55,7 @@
 
   <div style="overflow-x:auto;" class="flex-container">
     <div>
-        <p>VIJCI ZA PVC STOLARIJU din / 1 kom <span class="underline-text">LOŠ KVALITET</span></p>
+        <b>VIJCI ZA PVC STOLARIJU<br> din / 1 kom <span class="underline-text" style="margin-left: 50px">LOŠ KVALITET</span></b>
         <div class="flex-container">
             <div style="width: 150px">
                 @include('components/table1', ["table" => $tables[44], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -62,9 +70,10 @@
             </div>
         </div>
     </div>
-  
+
     <div>
-        <p>VIJCI ZA PVC STOLARIJU din / 1 kom <span class="underline-text">EXTRA KVALITET</span></p>
+        <b>VIJCI ZA PVC STOLARIJU<br>
+           din / 1 kom <span class="underline-text" style="margin-left: 50px">EXTRA KVALITET</span></b>
         <div class="flex-container">
             <div style="width: 150px">
                 @include('components/table1', ["table" => $tables[45], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -89,7 +98,8 @@
 
   <div style="overflow-x:auto;" class="flex-container">
     <div>
-        <p>SAMOREZAC ZA PVC STOLARIJU din / 1 kom <span class="underline-text">LOŠ KVALITET</span></p>
+        <b>SAMOREZAC ZA PVC STOLARIJU<br>
+           din / 1 kom <span class="underline-text" style="margin-left: 50px">LOŠ KVALITET</span></b>
         <div class="flex-container">
             <div style="width: 150px">
                 @include('components/table1', ["table" => $tables[46], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -99,9 +109,10 @@
             </div>
         </div>
     </div>
-  
+
     <div>
-        <p>SAMOREZAC ZA PVC STOLARIJU din / 1 kom <span class="underline-text">EXTRA KVALITET</span></p>
+        <b>SAMOREZAC ZA PVC STOLARIJU<br>
+           din / 1 kom <span class="underline-text" style="margin-left: 90px">EXTRA KVALITET</span></b>
         <div class="flex-container">
             <div style="width: 150px">
                 @include('components/table1', ["table" => $tables[47], "tableWidth" => 150, "col1" => "Dim.", "col2" => "Cena", "col1Width" => 75])
@@ -116,7 +127,7 @@
                     </div>
                     <div>
                         <img src="/img/image168.png" alt="">
-                        <p>OJAČANA GLAVA ŠRAFA</p>
+                        <b>OJAČANA GLAVA ŠRAFA</b>
                     </div>
                 </div>
             </div>
@@ -127,8 +138,9 @@
   <div style="overflow-x:auto;" class="container flex-container flex-column">
 
     <div>
-        <p>SAMOREZTAC SA RAVNOM GLAVOM -DIN 7504-N <span class="underline-text">LOŠ KVALITET</span> din / 100kom</p>
-        <div class="flex-container">
+        <b>SAMOREZAC SA RAVNOM GLAVOM -DIN 7504-N<br>
+            din / 100kom <span class="underline-text" style="margin-left: 250px">LOŠ KVALITET</span></b>
+        <div class="flex-container" style="justify-content: flex-start">
             <div style="width: 350px">
                 @include('components/table2', ["table" => $tables[48], "tableWidth" => 350, "col1" => "Dim.", "col1Width" => 50])
             </div>
@@ -138,8 +150,9 @@
         </div>
     </div>
     <div>
-        <p>SAMOREZTAC SA RAVNOM GLAVOM -DIN 7504-N <span class="underline-text">EXTRA KVALITET</span> din / 100kom</p>
-        <div class="flex-container">
+        <b>SAMOREZAC SA RAVNOM GLAVOM -DIN 7504-N<br>
+            din / 100kom <span class="underline-text" style="margin-left: 550px">EXTRA KVALITET</span></b>
+        <div class="flex-container" style="justify-content: flex-start">
             <div style="width: 650px">
                 @include('components/table2', ["table" => $tables[49], "tableWidth" => 650, "col1" => "Dim.", "col1Width" => 50])
             </div>
