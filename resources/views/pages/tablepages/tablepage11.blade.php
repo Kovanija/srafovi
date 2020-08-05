@@ -1,10 +1,10 @@
 <div style="overflow-x:auto;" class="flex-container">
-    <div class="flex-container flex-column">
+    <div class="flex-container flex-column" style="align-items: flex-start;">
         <div>
             <div class="flex-container">
                 <p>SET ZA LAVABO (SL)</p>
-                <img src="/img/image339.png" alt="">
-            </div>
+                    <img src="/img/image339.png" alt="" style="margin-right:50px;">
+                </div>
             <div>
                 <img src="/img/image334.png" alt="">
             </div>
@@ -71,7 +71,7 @@
         <div>
             <div class="flex-container">
                 <p>metalni (SPC)</p>
-                <img src="/img/image339.png" alt="">
+                <img src="/img/image339.png" alt="" style="margin-right: 40px;">
             </div>
             <div class="flex-container">
                 <div style="width: 350px">
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="flex-container flex-column">
+    <div class="flex-container flex-column" style="align-items: flex-start;">
         <div>
             <div class="flex-container">
                 <p>SET ZA WC ŠOLJU (SW)</p>
@@ -222,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div style="align-self:center;margin-left:20px;">
                 <p>KUKA ZA BETON UKUCAVAJUĆA</p>
                 <div style="width: 150px">
                     @include('components/table1', ["table" => $tables[112], "tableWidth" => 150, "col1" => "", "col2" => "din / 1 kom", "col1Width" => 75])

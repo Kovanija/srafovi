@@ -12,6 +12,9 @@ body {
     font-family: "Numans", sans-serif;
     width: 1500px;
 }
+p {
+    font-weight: bold;
+}
 
 img {
     margin: 10px;
@@ -23,6 +26,7 @@ img {
 
 .underline-text {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .orange-box {

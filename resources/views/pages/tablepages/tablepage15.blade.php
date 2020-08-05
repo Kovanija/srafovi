@@ -10,9 +10,9 @@
     </div>
 </div>
 
-<div style="overflow-x:auto;" class="flex-container flex-column">
+<div style="overflow-x:auto;" class="flex-container flex-column" >
    <div class="container"> <h1>Šelne sa gumom</h1></div>
-    <div class="flex-container">
+    <div class="flex-container" style="margin-left:190px">
         <div>
             <p>ŠELNA SA EPDM GUMOM (jedan šraf)</p>
             <div style="width: 300px">

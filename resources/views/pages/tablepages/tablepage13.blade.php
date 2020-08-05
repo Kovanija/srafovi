@@ -1,5 +1,5 @@
 <div style="overflow-x:auto;" class="flex-container flex-column">
-    <div class="flex-container">
+    <div class="flex-container" style="justify-content: flex-end;">
         <div>
             <p>ELASTIČNE ČIVIJE - JUS MC2.230 - DIN 1481 - din / kom</p>
             <div style="width: 700px">
@@ -32,14 +32,14 @@
             </div>
         </div>
     </div>
-    <div class="flex-container">
+    <div class="flex-container" style="margin-left:116px;">
         <div class="flex-container flex-column">
             <p>RASCEPKE - POCINKOVANE - JUS 300 - DIN 94 - din / kom</p>
             <div style="width: 550px">
                 @include('components/table2', ["table" => $tables[126], "tableWidth" => 550, "col1" => "(dxL)", "col1Width" => 75])
             </div>
             <div>
-                <img src="/img/image433.png" alt="">
+                <img src="/img/image433.png" alt="" style="margin-bottom:235px;">
             </div>
         </div>
         <div class="flex-container flex-column">
@@ -81,8 +81,8 @@
             <div class="flex-container">
                 <div class="flex-container flex-column">
                     <p>MAZALICE</p>
-                    <div style="width: 250px">
-                        @include('components/table2', ["table" => $tables[130], "tableWidth" => 250, "col1" => "Dim.", "col1Width" => 75])
+                    <div style="width: 350px">
+                        @include('components/table2', ["table" => $tables[130], "tableWidth" => 350, "col1" => "Dim.", "col1Width" => 75])
                     </div>
                     <div class="flex-container">
                         <div>
@@ -102,10 +102,11 @@
 </div>
 
 <div style="overflow-x:auto;" class="container">
-    <div>
+    <div style="margin-left:70px;">
         <img src="/img/image437.png" alt="">
+        <h2>Segeri</h2>
     </div>
-    <h2>Segeri</h2>
+   
 </div>
 
 <div style="overflow-x:auto;" class="flex-container">
@@ -127,9 +128,11 @@
             @include('components/table5', ["table" => $tables[132], "tableWidth" => 350, "col1" => "Dim.", "col2" => "din/kom", "col1Width" => 50, "tableNo" => 3])
         </div>
     </div>
-    <div class="flex-container flex-column">
+    <div class="flex-container flex-column" style="justify-content: flex-end;">
         <div class="flex-container">
+       
             <div style="width: 350px">
+            <p>USKOČNIK JUS 153 - DIN 6799</p>
                 @include('components/table5', ["table" => $tables[133], "tableWidth" => 350, "col1" => "Dim.", "col2" => "din/kom", "col1Width" => 75, "tableNo" => 2])
             </div>
             <div class="flex-container flex-column">
