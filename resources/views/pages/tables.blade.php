@@ -2,7 +2,7 @@
 
 @section('content')
 
- @include('pages.tablepages.tablepage1') 
+ {{-- @include('pages.tablepages.tablepage1') 
 @include('pages.tablepages.tablepage2') 
 @include('pages.tablepages.tablepage3') 
  @include('pages.tablepages.tablepage4') 
@@ -19,8 +19,8 @@
  @include('pages.tablepages.tablepage15') 
  @include('pages.tablepages.tablepage16')  
  @include('pages.tablepages.tablepage17') 
- @include('pages.tablepages.tablepage18') 
-
+ @include('pages.tablepages.tablepage18')  --}}
+ @include('pages.tablepages.tablepage19') 
 
 @endsection
 

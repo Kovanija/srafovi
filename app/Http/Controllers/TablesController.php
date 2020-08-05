@@ -212,6 +212,23 @@ class TablesController extends MasterController
                     }
                     array_push($table, $products, $data);
                     break;
+                case 10:
+                    foreach ($products as $product) {
+                        foreach ($product->details as $detail) {
+                            array_push($data, $detail);
+                            // if (!isset($data[$detail->dim1])) {
+                            //     $data[$detail->dim1] = array();
+                            // }
+                            // array_push($data[$detail->dim1], $detail);
+                            if ($order_details && in_array($detail->id, $order_details)) {
+                                $detail->ordered = true;
+                            } else {
+                                $detail->ordered = false;
+                            }
+                        }
+                    }
+                    array_push($table, $products, $data);
+                    break;
             }
             //array_push($tables, $table);
             $tables[$table[0]] = $table;

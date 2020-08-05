@@ -83,6 +83,23 @@ img {
     font-weight: bold;
     font-size: 15px;
 }
+
+.customTable.gray th {
+    background: #ccc !important;
+}
+
+.customTable.gray th:nth-child(2) {
+    width: 120px;
+}
+
+.customTable.gray th:nth-child(3) {
+    width: 50px;
+}
+
+.alat .flex-container {
+    justify-content: flex-start !important;
+}
+
 .customTable td,
 .customTable th {
     padding: 2px;
