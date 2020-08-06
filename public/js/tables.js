@@ -57,6 +57,8 @@ tablepagepositions.push(
     tablepagepositions[tablepagepositions.length - 1] + 50000
 );
 
+console.log(tablepages);
+
 window.addEventListener("scroll", function() {
     for (let i = 0; i < tablepages.length; i++) {
         if (

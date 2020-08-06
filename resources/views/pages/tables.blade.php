@@ -84,6 +84,12 @@
 <div id="tablepage20" class="tablepage">
     @include('pages.tablepages.tablepage20')
 </div> 
+<div id="tablepage21" class="tablepage">
+    @include('pages.tablepages.tablepage21')
+</div>
+<div id="tablepage22" class="tablepage">
+    @include('pages.tablepages.tablepage22')
+</div>
 
 
 </div>
