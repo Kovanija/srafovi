@@ -20,7 +20,7 @@
                 <th scope="row">{{$dim1}}</th>
                 @foreach($cells as $cell)
             <td class="{{ $cell->ordered ? 'ordered' : ''}} {{Session::has('cart') ? (array_key_exists($cell->id, Session::get('cart')->items) ? 'added' : '') : '' }}">
-            @if(!$cell->ordered)
+            {{-- @if(!$cell->ordered) --}}
                 <input 
                 list="datalist-{{ $cell->id }}"
                 type="number" 
@@ -32,8 +32,9 @@
                     <option value="50">
                     <option value="100">
                     <option value="150">
-                  </datalist>
-            @endif
+                    <option value="200">
+                </datalist>
+            {{-- @endif --}}
             </td>
                 @endforeach
             </tr>

@@ -24,64 +24,64 @@
 
 <div style="width:1850px; padding-top: 50px;">
 
-<div id="tablepage1" >
+<div id="tablepage1" class="tablepage">
     @include('pages.tablepages.tablepage1')
 </div>
-<div id="tablepage2" >
+<div id="tablepage2" class="tablepage">
     @include('pages.tablepages.tablepage2')
 </div> 
-<div id="tablepage3" >
+<div id="tablepage3" class="tablepage">
     @include('pages.tablepages.tablepage3')
 </div> 
-<div id="tablepage4" >
+<div id="tablepage4" class="tablepage">
     @include('pages.tablepages.tablepage4')
 </div> 
-<div id="tablepage5" >
+<div id="tablepage5" class="tablepage">
     @include('pages.tablepages.tablepage5')
 </div> 
-<div id="tablepage6" >
+<div id="tablepage6" class="tablepage">
     @include('pages.tablepages.tablepage6')
 </div> 
-<div id="tablepage7" >
+<div id="tablepage7" class="tablepage">
     @include('pages.tablepages.tablepage7')
 </div> 
-<div id="tablepage8" >
+<div id="tablepage8" class="tablepage">
     @include('pages.tablepages.tablepage8')
 </div> 
-<div id="tablepage9" >
+<div id="tablepage9" class="tablepage">
     @include('pages.tablepages.tablepage9')
 </div> 
-<div id="tablepage10" >
+<div id="tablepage10" class="tablepage">
     @include('pages.tablepages.tablepage10')
 </div> 
-<div id="tablepage11" >
+<div id="tablepage11" class="tablepage">
     @include('pages.tablepages.tablepage11')
 </div> 
-<div id="tablepage12" >
+<div id="tablepage12" class="tablepage">
     @include('pages.tablepages.tablepage12')
 </div> 
-<div id="tablepage13" >
+<div id="tablepage13" class="tablepage">
     @include('pages.tablepages.tablepage13')
 </div> 
-<div id="tablepage14" >
+<div id="tablepage14" class="tablepage">
     @include('pages.tablepages.tablepage14')
 </div> 
-<div id="tablepage15" >
+<div id="tablepage15" class="tablepage">
     @include('pages.tablepages.tablepage15')
 </div> 
-<div id="tablepage16" >
+<div id="tablepage16" class="tablepage">
     @include('pages.tablepages.tablepage16')
 </div> 
-<div id="tablepage17" >
+<div id="tablepage17" class="tablepage">
     @include('pages.tablepages.tablepage17')
 </div> 
-<div id="tablepage18" >
+<div id="tablepage18" class="tablepage">
     @include('pages.tablepages.tablepage18')
 </div> 
-<div id="tablepage19" >
+<div id="tablepage19" class="tablepage">
     @include('pages.tablepages.tablepage19')
 </div> 
-<div id="tablepage20" >
+<div id="tablepage20" class="tablepage">
     @include('pages.tablepages.tablepage20')
 </div> 
 

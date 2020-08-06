@@ -47,6 +47,29 @@ document.getElementById("pageSelector").addEventListener("change", function() {
     window.scrollBy(0, -150);
 });
 
+var tablepages = document.getElementsByClassName("tablepage");
+var tablepagepositions = [];
+var pageSelector = document.getElementById("pageSelector");
+for (let tablepage of tablepages) {
+    tablepagepositions.push(tablepage.offsetTop);
+}
+tablepagepositions.push(
+    tablepagepositions[tablepagepositions.length - 1] + 50000
+);
+
+window.addEventListener("scroll", function() {
+    for (let i = 0; i < tablepages.length; i++) {
+        if (
+            window.scrollY >= tablepagepositions[i] - 150 &&
+            window.scrollY < tablepagepositions[i + 1] - 150
+        ) {
+            if (pageSelector.selectedIndex != i) {
+                pageSelector.selectedIndex = i;
+            }
+        }
+    }
+});
+
 // for (let input of inputs) {
 //     input.addEventListener("focus", function() {
 //         let parent = document.createElement("ul");

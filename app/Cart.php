@@ -35,6 +35,8 @@ class Cart
 
     public function delete($id)
     {
-        unset($this->items[$id]);
+        if (array_key_exists($id, $this->items)) {
+            unset($this->items[$id]);
+        }
     }
 }

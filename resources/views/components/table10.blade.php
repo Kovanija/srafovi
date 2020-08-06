@@ -15,14 +15,21 @@
                 <th scope="row">{{$detail->dim2}}</th>
                 <th scope="row">{{$detail->pack}}</th>
                 <td class="{{ $detail->ordered ? 'ordered' : ''}} {{Session::has('cart') ? (array_key_exists($detail->id, Session::get('cart')->items) ? 'added' : '') : '' }}">
-                    @if(!$detail->ordered)
+                    {{-- @if(!$detail->ordered) --}}
                     <input 
+                    list="datalist-{{ $detail->id }}"
                     type="number" 
                     min="1" 
                     class="quantityInput" 
                     data-id="{{ $detail->id }}" 
                     value="{{Session::has('cart') ? (array_key_exists($detail->id, Session::get('cart')->items) ? Session::get('cart')->items[$detail->id]['quantity'] : '') : '' }}"/>
-                    @endif
+                    <datalist id="datalist-{{ $detail->id }}">
+                        <option value="50">
+                        <option value="100">
+                        <option value="150">
+                        <option value="200">
+                    </datalist>
+                    {{-- @endif --}}
                 </td>
             </tr>
             @endforeach

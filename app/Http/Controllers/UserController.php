@@ -23,7 +23,9 @@ class UserController extends Controller
         if (Auth::user()->id != 1) {
             return redirect("/");
         }
-        $newUser = $request->only('username', 'password', 'password_confirmation');
+        $username = $request->username;
+        $password = bcrypt($request->password);
+        $newUser = ["username" => $username, "password" => $password];
         try {
             $user = User::create($newUser);
             return redirect('/user')->with(['registerSuccess' => 'Uspešno ste uneli komercijalistu!']);

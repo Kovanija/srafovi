@@ -40,19 +40,19 @@
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
-                          <input type="text" name="name" class="form-control" placeholder="Ime/naziv">
+                          <input type="text" name="name" class="form-control" placeholder="Ime/naziv" value="{{ old('name') }}">
                       </div>
                       <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-at"></i></span>
                         </div>
-                        <input type="text" name="pib" class="form-control" placeholder="PIB">
+                        <input type="text" name="pib" class="form-control" placeholder="PIB" value="{{ old('pib') }}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-map-marker"></i></span>
                         </div>
-                        <input type="text" name="location" class="form-control" placeholder="Mesto">
+                        <input type="text" name="location" class="form-control" placeholder="Mesto" value="{{ old('location') }}">
                     </div>
                     <div class="form-group">
                         <label for="customer_type">Tip kupca</label>

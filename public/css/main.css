@@ -162,6 +162,12 @@ a:hover .pageDiv {
     word-wrap: break-word;
 }
 
+.customTable td {
+    background-color: black;
+    color: white;
+    border: 1px solid white !important;
+}
+
 .customTable td input {
     width: 100%;
     height: 100%;
@@ -170,18 +176,22 @@ a:hover .pageDiv {
     -webkit-appearance: none;
     -moz-appearance: textfield;
     background-color: inherit;
-}
-
-.customTable .added {
-    background-color: gray;
+    color: inherit;
 }
 
 .customTable .ordered {
-    background-color: black !important;
+    background-color: gray !important;
+    border: 1px solid white !important;
 }
 
-.customTable .ordered input {
+/* .customTable .ordered input {
     color: #fff;
+} */
+
+.customTable .added {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
 }
 
 .customTable td > ul > li {
