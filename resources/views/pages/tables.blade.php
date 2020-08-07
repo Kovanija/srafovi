@@ -22,7 +22,7 @@
     
 </div>
 
-{{-- <div style="width:1850px; padding-top: 50px;">
+<div style="width:1850px; padding-top: 50px;">
 
     <div id="tablepage1" class="tablepage">
         @include('pages.tablepages.tablepage1')
@@ -92,7 +92,7 @@
     </div>
 
 
-</div> --}}
+</div>
 
 @endsection
 
