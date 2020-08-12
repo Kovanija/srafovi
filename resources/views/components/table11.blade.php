@@ -20,7 +20,7 @@
                     min="1" 
                     class="quantityInput" 
                     data-id="{{ $detail->id }}" 
-                    value="{{Session::has('cart') ? (array_key_exists($detail->id, Session::get('cart')->items) ? Session::get('cart')->items[$detal->id]['quantity'] : '') : '' }}"/>
+                    value="{{Session::has('cart') ? (array_key_exists($detail->id, Session::get('cart')->items) ? Session::get('cart')->items[$detail->id]['quantity'] : '') : '' }}"/>
                     <datalist id="datalist-{{ $detail->id }}">
                         <option value="50">
                         <option value="100">

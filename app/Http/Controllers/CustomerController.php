@@ -24,4 +24,15 @@ class CustomerController extends Controller
             return redirect('/')->with(['customerError' => 'Došlo je do greške!']);
         }
     }
+
+    public function find(Request $request)
+    {
+        $name = $request->name;
+        try {
+            $customers = Customer::where('name', 'LIKE', '%' . $name . '%')->get();
+            return redirect('/')->with(['findSuccess' => $customers]);
+        } catch (Exception $e) {
+            return redirect('/')->with(['findError' => 'Došlo je do greške!']);
+        }
+    }
 }

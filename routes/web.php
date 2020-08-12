@@ -32,6 +32,7 @@ Route::get('/logout', 'AuthController@logout')->middleware('auth');
 
 Route::get('/customer', 'CustomerController@index')->middleware('auth');
 Route::post('/customer', 'CustomerController@store')->middleware('auth');
+Route::get('/customer/find', 'CustomerController@find')->middleware('auth');
 
 Route::get('/cart', 'OrderController@index')->middleware('auth');
 Route::get('/cart/add', 'OrderController@add')->middleware('auth');
@@ -39,6 +40,7 @@ Route::get('/cart/delete/{id}', 'OrderController@delete')->middleware('auth');
 Route::get('/cart/flush', 'OrderController@flush')->middleware('auth');
 Route::post('/cart/order', 'OrderController@order')->middleware('auth');
 Route::get('/cart/pdf', 'OrderController@generatePDF');
+Route::get('/cart/finish', 'OrderController@finish');
 
 Route::post('/insert', function () {
     $pro = new Product();
@@ -60,11 +62,11 @@ Route::post('/insert', function () {
             // "dim2" => "50mm",
             "pack" => "6"
         ],
-  
-    
-       
-    
-       
+
+
+
+
+
 
     ];
 

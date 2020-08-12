@@ -2,10 +2,16 @@
 
 @section('content')
 <div class="container">
-    <img src="img/image003.png" class="img">
-    <img src="img/image001.png">
-      <div class="d-flex justify-content-center h-100">
-          <div class="card">
+    <div class="flex-container">
+        {{-- <div>
+            <img src="img/image003.png" class="img">
+        </div> --}}
+        <div>
+            <img src="img/image001.png" class="img">
+        </div>
+    </div>
+    <div class="">
+          <div class="card login-card">
               <div class="card-header">
                   <h3>Ulogujte se</h3>
               </div>
@@ -40,5 +46,8 @@
             @endif
           </div>
       </div>
+
+      
+      
   </div>
   @endsection

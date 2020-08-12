@@ -98,4 +98,11 @@ class OrderController extends Controller
         $pdf = PDF::loadView('components.pdf', ["cart" => $cart, "customer" => $customer, "date" => $date]);
         return $pdf->download('narudzbina_' . $date . '_' . $customer->pib . '.pdf');
     }
+
+    public function finish(Request $request)
+    {
+        $request->session()->forget('cart');
+        $request->session()->forget('customer');
+        return redirect('/');
+    }
 }

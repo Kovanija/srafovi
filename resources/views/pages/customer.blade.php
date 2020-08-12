@@ -29,6 +29,43 @@
           @endif
         </div>
 
+        <div class="card">
+            <div class="card-header">
+                <h3>Pretraga po imenu</h3>
+            </div>
+            <div class="card-body">
+                <form method="GET" action="/customer/find">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="name" class="form-control" placeholder="Ime/Naziv">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Pretraži" class="btn float-right login_btn">
+                    </div>
+                </form>
+            </div>
+            @if(Session::has('findError'))
+            <div class="card-footer">
+              <div class="d-flex justify-content-center errors">
+                  {{Session::get('findError')}} 
+              </div>
+          </div>
+          @endif
+          @if(Session::has('findSuccess'))
+            <div class="card-footer">
+              <div class="d-flex justify-content-center success">
+                  <ul>
+                      @foreach(Session::get('findSuccess') as $customer)
+                        <li><a href="/tables?pib={{$customer->pib}}">{{$customer->name}} | {{$customer->pib}}</a></li>
+                      @endforeach
+                  </ul>
+              </div>
+          </div>
+          @endif
+        </div>
+
           <div class="card">
               <div class="card-header">
                   <h3>Dodajte novog kupca</h3>

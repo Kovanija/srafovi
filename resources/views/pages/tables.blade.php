@@ -9,7 +9,7 @@
         </div>
     </a> 
     @endforeach --}}
-    <form style="width:300px; margin: 0 auto;">
+    <form style="margin: 0 auto;" class="page-selector">
         <div class="form-group">
             <label for="pageSelector">Stranica</label>
             <select class="form-control" id="pageSelector">

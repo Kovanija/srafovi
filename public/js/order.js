@@ -21,12 +21,21 @@ document.getElementById("orderBtn").addEventListener("click", function() {
         });
 });
 
-var deleteButtons = document.getElementsByClassName("deleteItemBtn");
-for (let btn of deleteButtons) {
-    btn.addEventListener("click", function() {
-        const detail_id = this.dataset.id;
-        fetch(`/cart/delete/${detail_id}`)
-            .then(response => response.text())
-            .then(data => (orderTable.innerHTML = data));
-    });
+// var deleteButtons = document.getElementsByClassName("deleteItemBtn");
+// for (let btn of deleteButtons) {
+//     btn.addEventListener("click", function() {
+//         const detail_id = this.dataset.id;
+//         fetch(`/cart/delete/${detail_id}`)
+//             .then(response => response.text())
+//             .then(data => (orderTable.innerHTML = data));
+//     });
+// }
+
+function deleteFromCart(id) {
+    const detail_id = id;
+    console.log("clicK");
+    console.log(detail_id);
+    fetch(`/cart/delete/${detail_id}`)
+        .then(response => response.text())
+        .then(data => (orderTable.innerHTML = data));
 }
