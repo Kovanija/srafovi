@@ -22,7 +22,7 @@
     
 </div>
 
-<div style="width:1850px; padding-top: 50px;">
+<div class="table-container" style="">
 
     <div id="tablepage1" class="tablepage">
         @include('pages.tablepages.tablepage1')
