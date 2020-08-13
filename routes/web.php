@@ -43,59 +43,52 @@ Route::get('/cart/pdf', 'OrderController@generatePDF');
 Route::get('/cart/finish', 'OrderController@finish');
 
 Route::post('/insert', function () {
-    $pro = new Product();
+    // $pro = new Product();
 
-    $pro->name = "Cerada 4x6m 60g";
+    // $pro->name = "Cerada 4x6m 60g";
 
-    $pro->table_id = 291;
-    $pro->table_type = 11;
+    // $pro->table_id = 291;
+    // $pro->table_type = 11;
 
-    $pro->save();
+    // $pro->save();
 
-    $product_id = $pro->id;
+    $product_id = 452;
 
-    // $arr1 = [3009, 8017, 9006];
-    // $arr2 = ["4.8x25", "4.8x35", "4.8x70", "5.5x80"];
-    $arr3 = [
-        [
-            "dim1" => "4430",
-            // "dim2" => "50mm",
-            "pack" => "6"
-        ],
+    $arr1 = ["2.0 x 85/56", "2.5 x 95/62", "3.0 x 100/66", "3.2 x 106/69", "3.3 x 112/73", "3.5 x 112/73", "3.8 x 119/78", "4.0 x 119/78", "4.1 x 119/78", "4.2 x 119/78", "4.5 x 126/82", "4.8 x 132/87", "5.0 x 132/87", "5.2 x 132/87", "5.5 x 139/91", "6.0 x 139/91", "6.5 x 148/97", "7.0 x 156/102", "7.5 x 156/102", "8.0 x 165/109", "8.5 x 165/109", "9.0 x 175/115", "9.5 x 175/115", "10.0 x 184/121", "10.5 x 184/121", "11.0 x 195/128", "11.5 x 195/128", "12.0 x 205/134", "12.5 x 205/134", "13.0 x 205/134"];
+    //$arr2 = [3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.0];
+    // $arr3 = [
+    //     [
+    //         "dim1" => "4430",
+    //         // "dim2" => "50mm",
+    //         "pack" => "6"
+    //     ],
 
+    // foreach ($arr3 as $obj) {
 
+    //     $det = new Detail();
 
+    //     $det->dim1 = $obj["dim1"];
+    //     // $det->dim2 = $obj["dim2"];
+    //     $det->pack = $obj["pack"];
 
+    //     $det->product_id = $product_id;
 
+    //     $det->save();
+    // }
 
-    ];
-
-    foreach ($arr3 as $obj) {
-
+    foreach ($arr1 as $dim1) {
+        //foreach ($arr2 as $dim2) {
         $det = new Detail();
 
-        $det->dim1 = $obj["dim1"];
-        // $det->dim2 = $obj["dim2"];
-        $det->pack = $obj["pack"];
+        $det->dim1 = $dim1;
+        //$det->dim2 = $dim2;
+        //$det->dim3 = null;
 
         $det->product_id = $product_id;
 
         $det->save();
+        //}
     }
-
-    // foreach ($arr1 as $dim1) {
-    //     foreach ($arr2 as $dim2) {
-    //         $det = new Detail();
-
-    //         $det->dim1 = $dim1;
-    //         $det->dim2 = $dim2;
-    //         //$det->dim3 = null;
-
-    //         $det->product_id = $product_id;
-
-    //         $det->save();
-    //     }
-    // }
 
     return response(null, 201);
 });

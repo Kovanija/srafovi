@@ -39,8 +39,8 @@
             <b>SAMORESCI - ŠESTOUGAONA GLAVA<br>
                DIN 7504K cena za 100kom <span class="underline-text" style="margin-left: 50px">EXTRA KVALITET</span></b>
             <div class="flex-container">
-                <div style="width:250px">
-                    @include('components/table2', ["table" => $tables[52], "tableWidth" => 250, "col1" => "Dim.", "col1Width" => 50])
+                <div style="width:350px">
+                    @include('components/table2', ["table" => $tables[52], "tableWidth" => 350, "col1" => "Dim.", "col1Width" => 50])
                 </div>
                 <div class="flex-container flex-column">
                     <div>

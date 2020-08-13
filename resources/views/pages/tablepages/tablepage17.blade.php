@@ -77,7 +77,7 @@
             </div>
             <div class="flex-container" style="justify-content: inherit;">
                 <div style="width: 400px">
-                    @include('components/table8', ["table" => $tables[151], "tableWidth" => 400, "colDim1" => "NAZIV", "colDim2" => "Dimenzija", "col2" => "cena"])
+                    @include('components/table8', ["table" => $tables[151], "tableWidth" => 400, "colDim1" => "Dimenzija", "colDim2" => "duzina x sirina", "col2" => "cena"])
                 </div>
                 <div class="">
                     <div>
@@ -186,8 +186,8 @@
                     <p>BURGIJE ZA METAL (DUGACKA) DIN 340 HIGH QUALITY (GERMANY)</p>
                 </div>
                 <div class="flex-container" style="justify-content: inherit;">
-                    <div style="width: 200px">
-                        @include('components/table1', ["table" => $tables[157], "tableWidth" => 200, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 100])
+                    <div style="width: 300px">
+                        @include('components/table1', ["table" => $tables[157], "tableWidth" => 300, "col1" => "Dimenzija", "col2" => "Cena", "col1Width" => 115])
                     </div>
                     <div>
                         <img src="/img/image545.png" alt="">

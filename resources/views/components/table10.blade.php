@@ -12,7 +12,7 @@
             @foreach($table[2] as $detail)
             <tr>
                 <th scope="row">{{$detail->dim1}}</th>
-                <th scope="row">{{$detail->dim2}}</th>
+                <th scope="row">{!! $detail->dim2 !!}</th>
                 <th scope="row">{{$detail->pack}}</th>
                 <td class="{{ $detail->ordered ? 'ordered' : ''}} {{Session::has('cart') ? (array_key_exists($detail->id, Session::get('cart')->items) ? 'added' : '') : '' }}">
                     {{-- @if(!$detail->ordered) --}}

@@ -144,7 +144,7 @@
                 </div>
             </div>
             <div style="width: 300px">
-                @include('components/table10', ["table" => $tables[187], "tableWidth" => 300])
+                @include('components/table10', ["table" => $tables[188], "tableWidth" => 300])
             </div>
         </div>
 
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div style="width: 300px">
-                @include('components/table10', ["table" => $tables[188], "tableWidth" => 300])
+                @include('components/table10', ["table" => $tables[187], "tableWidth" => 300])
             </div>
         </div>
 

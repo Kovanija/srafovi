@@ -70,6 +70,7 @@
                     <img src="/img/image412.png" alt="" style="margin-right: 100px; margin-top: -60px">
                 </div>
             </div>
+            <p>*za velika opterećenja (produžene dimenzije)</p>
         </div>
     </div>
     <div class="flex-container flex-column" style="margin-top:40px;">

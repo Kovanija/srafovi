@@ -5,7 +5,7 @@
 </div>
 
 <div style="overflow-x:auto;" class="underline-text center-align">
-    UKUCAVAJUĆI VIJCI - EXTRA KVALITET - din / 1kom
+    <h2>UKUCAVAJUĆI VIJCI - EXTRA KVALITET - din / 1kom</h2>
 </div>
 
 <div style="overflow-x:auto;" class="flex-container">

@@ -1,5 +1,5 @@
 <div style="overflow-x:auto;" class="flex-container flex-column">
-    <div class="flex-container" style="justify-content: flex-end;">
+    <div class="flex-container" style="">
         <div>
             <p>ELASTIČNE ČIVIJE - JUS MC2.230 - DIN 1481 - din / kom</p>
             <div style="width: 700px">

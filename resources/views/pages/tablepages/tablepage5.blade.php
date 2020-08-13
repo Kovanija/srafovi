@@ -51,7 +51,7 @@
 
     <div>
       <b>MAŠINSKI VIJCI JUS 103 - CINKOVANI din/100kom</b>
-      <div style="width: 500px; margin-top: -30px">
+      <div style="width: 500px;">
         @include('components/table2', ["table" => $tables[33], "tableWidth" => 500, "col1" => "Dim.", "col1Width" => 50])
       </div>
       <div>
@@ -80,7 +80,7 @@
     </div>
 
     <div>
-      <b>MAŠINSKI VIJCI JUS - CINKOVANI din/100</b>
+      <b>MAŠINSKI VIJCI JUS 144 - CINKOVANI din/100</b>
       <div class="flex-container">
         <div style="width: 300px">
           @include('components/table2', ["table" => $tables[35], "tableWidth" => 300, "col1" => "Dim.", "col1Width" => 50])
