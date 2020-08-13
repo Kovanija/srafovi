@@ -23,8 +23,8 @@ class Detail extends Model
 
     // protected static function booted()
     // {
-    //     static::addGlobalScope('order', function (Builder $builder) {
-    //         $builder->orderByRaw('length(dim1), dim1');
-    //     });
+    // static::addGlobalScope('order', function (Builder $builder) {
+    //     $builder->orderByRaw('length(dim1), dim1, length(dim2), dim2');
+    // });
     // }
 }

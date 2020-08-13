@@ -2,10 +2,10 @@
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Proizvod</th>
-            <th scope="col" style="min-width:115px">Dim 1</th>
-            <th scope="col" style="min-width:115px; padding-right: 20px;">Dim 2</th>
-            <th scope="col" style="min-width:105px">Pak</th>
+            <th scope="col" style="width: 400px;">Proizvod</th>
+            <th scope="col" style="text-align: right;">Dim 1</th>
+            <th scope="col" style="min-width: 100px;">Dim 2</th>
+            <th scope="col" style="text-align: right">Pak</th>
             <th scope="col">Količina</th>
             <th scope="col">Obriši</th>
         </tr>
