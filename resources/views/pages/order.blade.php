@@ -18,10 +18,16 @@
     <form>
         @csrf
     </form>
-    <button id="orderBtn" class="btn btn-success">Naruči</button>
-    <a href="/cart/pdf" class="btn orangeButton">Pretvori u PDF</a>
-    <a href="/cart/finish" class="btn btn-danger float-right ml-1">Završi</a>
-    <a href="/cart/flush" class="btn btn-danger float-right">Izbriši sve</a>
+    <div class="mb-5">
+        <button id="orderBtn" class="btn btn-success">Naruči</button>
+        <a href="/cart/pdf" class="btn orangeButton">Pretvori u PDF</a>
+    </div>
+    <hr>
+    <div class="mt-5">
+        <a href="/cart/finish" class="btn btn-danger">Završi</a>
+        <a href="/cart/flush" class="btn btn-outline-danger">Izbriši sve</a>
+    </div>
+    
 
     <div id="successBox" class="success">
 

@@ -135,33 +135,37 @@
     </div>
   </div><br>
 
-  <div style="overflow-x:auto;" class="container flex-container flex-column">
+  <div style="overflow-x:auto;" class="flex-container flex-column">
 
-    <div>
-        <b>SAMOREZAC SA RAVNOM GLAVOM -DIN 7504-N<br>
-            din / 100kom <span class="underline-text" style="margin-left: 250px">LOŠ KVALITET</span></b>
-        <div class="flex-container" style="justify-content: flex-start">
-            <div style="width: 350px">
-                @include('components/table2', ["table" => $tables[48], "tableWidth" => 350, "col1" => "Dim.", "col1Width" => 50])
-            </div>
-            <div>
-                <img src="/img/image180.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div>
-        <b>SAMOREZAC SA RAVNOM GLAVOM -DIN 7504-N<br>
-            din / 100kom <span class="underline-text" style="margin-left: 550px">EXTRA KVALITET</span></b>
-        <div class="flex-container" style="justify-content: flex-start">
-            <div style="width: 650px">
-                @include('components/table2', ["table" => $tables[49], "tableWidth" => 650, "col1" => "Dim.", "col1Width" => 50])
-            </div>
-            <div class="flex-container flex-column">
-                <div>
-                    <img src="/img/image182.png" alt="">
+    <div class="flex-container">
+        <div>
+            <b>SAMOREZAC SA RAVNOM GLAVOM -DIN 7504-N<br>
+                din / 100kom <span class="underline-text" style="margin-left: 250px">LOŠ KVALITET</span></b>
+            <div class="flex-container">
+                <div style="width: 350px">
+                    @include('components/table2', ["table" => $tables[48], "tableWidth" => 350, "col1" => "Dim.", "col1Width" => 50])
                 </div>
                 <div>
                     <img src="/img/image180.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div>
+            <b>SAMOREZAC SA RAVNOM GLAVOM -DIN 7504-N<br>
+                din / 100kom <span class="underline-text" style="margin-left: 550px">EXTRA KVALITET</span></b>
+            <div class="flex-container">
+                <div style="width: 650px">
+                    @include('components/table2', ["table" => $tables[49], "tableWidth" => 650, "col1" => "Dim.", "col1Width" => 50])
+                </div>
+                <div class="flex-container flex-column">
+                    <div>
+                        <img src="/img/image182.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/image180.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>

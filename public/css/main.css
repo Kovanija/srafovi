@@ -82,7 +82,16 @@ img {
     }
 }
 
-@media screen and (max-width: 975px) {
+.pages {
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    background-color: lightgray;
+    padding: 6px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 980px) {
     .page-selector label {
         font-size: 100px;
     }
@@ -91,15 +100,14 @@ img {
         height: auto;
         font-size: 100px;
     }
-}
 
-.pages {
-    position: fixed;
-    top: 56px;
-    width: 100%;
-    background-color: lightgray;
-    padding: 6px;
-    z-index: 10;
+    .navbar-toggler-table {
+        font-size: 100px;
+    }
+
+    .pages {
+        top: 160px;
+    }
 }
 
 .pageDiv {
@@ -325,6 +333,7 @@ a:hover .pageDiv {
 }
 .a {
     margin: 0 auto;
+    width: auto;
 }
 .m {
     table-layout: auto;
@@ -405,7 +414,7 @@ a:hover .pageDiv {
 }
 
 .container {
-    padding-left: 70px;
+    /* padding-left: 70px; */
 }
 .img {
     width: 200px;

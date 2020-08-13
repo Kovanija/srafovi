@@ -2,28 +2,32 @@
 <img src="/img/image007.png" alt="">
 </div>
 
-<div style="overflow-x:auto;" class="container flex-container flex-column">
-   <div>
-     <b style="margin-left: 200px">MAŠINSKI VIJCI JUS 051 - CINKOVANI - kv 10.9. -din / 100kom</b>
-     <div class="flex-container">
-        <div style="width: 800px">
-          @include('components/table2', ["table" => $tables[30], "tableWidth" => 800, "col1" => "Dim.", "col1Width" => 50])
-        </div>
-        <div>
-          <img src="/img/image057.png" alt="" style="margin-left: -110px">
-        </div>
-     </div>
+<div style="overflow-x:auto;" class="flex-container flex-column">
+   <div class="flex-container">
+    <div>
+      <b style="margin-left: 200px">MAŠINSKI VIJCI JUS 051 - CINKOVANI - kv 10.9. -din / 100kom</b>
+      <div class="flex-container">
+         <div style="width: 800px">
+           @include('components/table2', ["table" => $tables[30], "tableWidth" => 800, "col1" => "Dim.", "col1Width" => 50])
+         </div>
+         <div>
+           <img src="/img/image057.png" alt="" style="">
+         </div>
+      </div>
+    </div>
    </div>
    <br>
 
-    <div>
-      <b style="margin-left: 190px">MAŠINSKI VIJCI JUS 053 - CINKOVANI - kv 10.9. - din/100kom</b>
-      <div class="flex-container">
-        <div style="width: 700px">
-          @include('components/table2', ["table" => $tables[31], "tableWidth" => 700, "col1" => "Dim.", "col1Width" => 50])
-        </div>
-        <div>
-          <img src="/img/image060.png" alt="" style="margin-left: -150px; height: 80%">
+    <div class="flex-container">
+      <div>
+        <b style="margin-left: 190px">MAŠINSKI VIJCI JUS 053 - CINKOVANI - kv 10.9. - din/100kom</b>
+        <div class="flex-container">
+          <div style="width: 700px">
+            @include('components/table2', ["table" => $tables[31], "tableWidth" => 700, "col1" => "Dim.", "col1Width" => 50])
+          </div>
+          <div>
+            <img src="/img/image060.png" alt="" style="height: 80%">
+          </div>
         </div>
       </div>
     </div>
