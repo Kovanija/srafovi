@@ -248,6 +248,22 @@ class TablesController extends MasterController
                     break;
             }
             //array_push($tables, $table);
+
+            if ($product->category_id == 3) {
+                uksort($table[2], function ($a, $b) {
+                    if ((int)$a > (int)$b) {
+                        return 1;
+                    } else if ((int)$a < (int)$b) {
+                        return -1;
+                    } else if (strlen($a) > strlen($b)) {
+                        return 1;
+                    } else if (strlen($a) < strlen($b)) {
+                        return -1;
+                    } else {
+                        return strcmp($a, $b);
+                    }
+                });
+            }
             $tables[$table[0]] = $table;
         }
         $allPages = range(1, 22);

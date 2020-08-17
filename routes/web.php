@@ -4,6 +4,7 @@ use App\Category;
 use App\Detail;
 use App\Order;
 use App\Product;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -91,4 +92,16 @@ Route::post('/insert', function () {
     }
 
     return response(null, 201);
+});
+
+Route::post('/pack', function (Request $request) {
+    $detail_id = $request->detail_id;
+    $pack = $request->pack;
+    try {
+        $det = Detail::find($detail_id);
+        $det->default_packing = (int)$pack;
+        $det->save();
+    } catch (Exception $e) {
+        return response(["error" => "Greška"], 500);
+    }
 });

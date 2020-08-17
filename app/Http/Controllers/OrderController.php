@@ -72,7 +72,7 @@ class OrderController extends Controller
                 $oldOrder = Order::where('customer_id', $data['customer_id'])->where('detail_id', $data['detail_id'])->first();
                 if ($oldOrder) {
                     $oldDetail = Detail::find($oldOrder->detail_id);
-                    array_push($exist, "Porudžbina " . $oldDetail->product->name . ' ' . $oldDetail->dim1 . ' ' . ($oldDetail->dim2 ? $oldDetail->dim2 . ' ' : '') . ($oldDetail->pack ? $oldDetail->pack . ' ' : '') . "za PIB već postoji.");
+                    array_push($exist, "Porudžbina " . $oldDetail->product->name . ' ' . $oldDetail->dim1 . ' ' . ($oldDetail->dim2 ? $oldDetail->dim2 . ' ' : '') . ($oldDetail->pack ? $oldDetail->pack . ' ' : '') . "za PIB već postoji ču bazi.");
                 } else {
                     try {
                         $newOrder = Order::create($data);

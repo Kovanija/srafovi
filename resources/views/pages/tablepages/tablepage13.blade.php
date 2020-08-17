@@ -147,7 +147,9 @@
         <div>
             <p>PERFORIRANA TRAKA</p>
             <img src="/img/image451.png" alt="">
-            <p>0.65/15mm x 10m</p>
+            <div style="width: 385px;">
+                @include('components/table1', ["table" => $tables[292], "tableWidth" => 385, "col1" => "", "col2" => "", "col1Width" => 200])
+            </div>
         </div>
     </div>
 </div>

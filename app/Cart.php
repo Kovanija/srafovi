@@ -28,7 +28,7 @@ class Cart
         //     }
         // } else {
         $detail = Detail::with('product')->where('id', $id)->first();
-        $storedItem = ['name' => $detail->product->name, 'dim1' => $detail->dim1, 'dim2' => $detail->dim2, 'pack' => $detail->pack, 'quantity' => $quantity];
+        $storedItem = ['name' => $detail->product->name, 'dim1' => $detail->dim1, 'dim2' => $detail->dim2, 'pack' => $detail->pack, 'quantity' => $quantity, 'category' => $detail->product->category_id];
         // }
         $this->items[$id] = $storedItem;
     }
