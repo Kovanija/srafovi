@@ -94,14 +94,4 @@ Route::post('/insert', function () {
     return response(null, 201);
 });
 
-Route::post('/pack', function (Request $request) {
-    $detail_id = $request->detail_id;
-    $pack = $request->pack;
-    try {
-        $det = Detail::find($detail_id);
-        $det->default_packing = (int)$pack;
-        $det->save();
-    } catch (Exception $e) {
-        return response(["error" => "Greška"], 500);
-    }
-});
+Route::get('/pack', 'TablesController@pack');

@@ -6,6 +6,7 @@ use App\Customer;
 use App\Detail;
 use App\Order;
 use App\Product;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -268,5 +269,19 @@ class TablesController extends MasterController
         }
         $allPages = range(1, 22);
         return view('pages/tables', ["tables" => $tables, "allPages" => $allPages]);
+    }
+
+    public function pack(Request $request)
+    {
+        $detail_id = $request->detail_id;
+        $pack = $request->pack;
+        try {
+            $det = Detail::find($detail_id);
+            $det->default_packing = (int)$pack;
+            $det->save();
+            return response(["success" => "Uspeh"], 200);
+        } catch (Exception $e) {
+            return response(["error" => "Greška", "detail" => $detail_id, "pack" => $pack], 500);
+        }
     }
 }
