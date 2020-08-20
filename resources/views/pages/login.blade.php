@@ -7,7 +7,7 @@
             <img src="img/image003.png" class="img">
         </div> --}}
         <div>
-            <img src="img/image001.png" class="img">
+            <img src="img/image003.png" class="img">
         </div>
     </div>
     <div class="">

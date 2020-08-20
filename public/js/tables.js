@@ -20,22 +20,22 @@ var inputs = document.getElementsByClassName("quantityInput");
 //     });
 // }
 
-for (let input of inputs) {
-    input.addEventListener("keypress", function(e) {
-        if (e.key == "Enter") {
-            const detail_id = this.dataset.id;
-            if (this.value != "") {
-                const pack = this.value;
-                fetch(`/pack?detail_id=${detail_id}&pack=${pack}`)
-                    .then(res => {
-                        const parent = this.parentElement;
-                        parent.classList.add("added");
-                    })
-                    .catch(err => console.log(err));
-            }
-        }
-    });
-}
+// for (let input of inputs) {
+//     input.addEventListener("keypress", function(e) {
+//         if (e.key == "Enter") {
+//             const detail_id = this.dataset.id;
+//             if (this.value != "") {
+//                 const pack = this.value;
+//                 fetch(`/pack?detail_id=${detail_id}&pack=${pack}`)
+//                     .then(res => {
+//                         const parent = this.parentElement;
+//                         parent.classList.add("added");
+//                     })
+//                     .catch(err => console.log(err));
+//             }
+//         }
+//     });
+// }
 
 // for (let input of inputs) {
 //     input.addEventListener("blur", function() {
@@ -55,23 +55,23 @@ for (let input of inputs) {
 //     });
 // }
 
-// for (let input of inputs) {
-//     input.addEventListener("input", function() {
-//         const detail_id = this.dataset.id;
-//         if (this.value !== "") {
-//             const quantity = this.value;
-//             fetch(`/cart/add?detail_id=${detail_id}&quantity=${quantity}`);
-//             const parent = this.parentElement;
-//             //parent.classList.remove("added");
-//             //setTimeout(function() {
-//             parent.classList.add("added");
-//             //}, 200);
-//         } else {
-//             fetch(`/cart/delete/${detail_id}`);
-//             this.parentElement.classList.remove("added");
-//         }
-//     });
-// }
+for (let input of inputs) {
+    input.addEventListener("input", function() {
+        const detail_id = this.dataset.id;
+        if (this.value !== "") {
+            const quantity = this.value;
+            fetch(`/cart/add?detail_id=${detail_id}&quantity=${quantity}`);
+            const parent = this.parentElement;
+            //parent.classList.remove("added");
+            //setTimeout(function() {
+            parent.classList.add("added");
+            //}, 200);
+        } else {
+            fetch(`/cart/delete/${detail_id}`);
+            this.parentElement.classList.remove("added");
+        }
+    });
+}
 
 window.addEventListener("hashchange", function() {
     window.scrollTo(window.scrollX, window.scrollY - 150);
