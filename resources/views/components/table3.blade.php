@@ -29,6 +29,7 @@
         <td class="{{ $cell->ordered ? 'ordered' : ''}} {{Session::has('cart') ? (array_key_exists($cell->id, Session::get('cart')->items) ? 'added' : '') : '' }}">
             {{-- @if(!$cell->ordered) --}}
             <input 
+            oninput="addToCart(this)"
             list="datalist-{{ $cell->id }}"
             type="number" 
             min="1" 

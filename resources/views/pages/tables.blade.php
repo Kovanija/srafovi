@@ -1,5 +1,9 @@
 @extends('layouts/master')
 
+@section('headjs')
+<script src="{{asset('js/tablesCart.js')}}"></script>
+@endsection
+
 @section('content')
 <div class="flex-container pages">
     {{-- @foreach($allPages as $page) 
